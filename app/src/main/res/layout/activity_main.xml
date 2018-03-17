@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Android Vibrator Example" />
+
+	<Button
+	    android:id="@+id/buttonStop"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignBaseline="@+id/buttonStartVibrate"
+	    android:layout_alignBottom="@+id/buttonStartVibrate"
+	    android:layout_toRightOf="@+id/buttonStartVibrate"
+	    android:onClick="onClickStop"
+	    android:text="  Stop  " />
+
+	<Button
+	    android:id="@+id/buttonStartVibrate"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textViewTitle"
+	    android:layout_below="@+id/textViewTitle"
+	    android:layout_marginTop="16dp"
+	    android:onClick="onClickVibrate"
+	    android:text="Vibrate" />
+
+</RelativeLayout>
